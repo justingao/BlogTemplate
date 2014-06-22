@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="{{ site.author }}" />
-    <title>{{ page.title }} | {{ site.author }}</title>
+    <meta name="author" content="{{ site.my.name }}" />
+    <title>{{ page.title }} | {{ site.my.name }}</title>
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
+    <link href="/feed/" rel="alternate" title="{{ site.my.name }}" type="application/atom+xml" />
     <link rel="stylesheet" href="/media/css/style.css">
     <link rel="stylesheet" href="/media/css/highlight.css">
     <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
@@ -30,7 +30,7 @@
       </div>
 
     <footer>
-        <p><small>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> & <a href="http://pages.github.com">GitHub</a> | Copyright 2014 - {{site.time | date:"%Y"}} by <a href="http://justingao.github.com/about/">Justin</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z +0800"}}</span></small></p>
+        <p><small>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> & <a href="http://pages.github.com">GitHub</a> | Copyright 2014 - {{site.time | date:"%Y"}} by <a href="{{ site.url }}/about/">{{ site.author }}</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z +0800"}}</span></small></p>
     </footer>
 
     </div>
@@ -54,7 +54,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-52005096-1', 'justingao.github.io');
+        ga('create', '{{ site.ga.id }}', '{{ site.ga.url }}');
         ga('send', 'pageview');
 
     </script>

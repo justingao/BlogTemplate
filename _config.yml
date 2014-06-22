@@ -1,6 +1,43 @@
+########################################################################
+# Jekyll Blog Settings. 
+########################################################################
+#
+# Site Basic Info; 
+#
+# Markdown type, such as: rdiscount, maruku
 markdown: rdiscount
+# URL style. 
 permalink: /:year/:month/:title/
-author: Justin GAO
+# Support syntax highlight. 
 pygments: true
+# Posts displayed in each page.
 paginate: 16
+# Your blog's URL address.
 url: http://justingao.github.io
+
+# 
+# Personal Info; 
+# 
+my: 
+    # Your name. 
+    name: Justin GAO
+    # Your email.
+    email: justin@leigao.org
+    # GitHub Account. 
+    github: justingao
+
+#
+# Disqus settings. 
+#
+disqus:
+    # Disqus short name; 
+    shortname: justingao
+
+# 
+# Google Analytics; 
+#
+ga: 
+    # Google Analytics ID; 
+    id: UA-52005096-1
+    # Google Analytics Site URL; 
+    uri: justingao.github.io
